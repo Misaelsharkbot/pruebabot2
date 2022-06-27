@@ -1,9 +1,9 @@
-let handler = async (m, { conn }) => {
-let api-hyzer = 'https://api.zacros.my.id/asupan/cecan'
-    conn.sendButtonImg(m.chat, api-hyzer, 'Nih', wm2, 'NEXT', '.cecan', m)
+let handler = async(m,{text, conn}) => {
+let supa = 'https://api.zacros.my.id/asupan/random'
+conn.sendFile(m.chat, supa, null, 'Nih', m)
 }
-handler.help = ['cecan']
+handler.help = ['asupan']
 handler.tags = ['asupan']
-handler.command = /^(cecan)$/i
+handler.command = /^(asupan)$/i
 
 module.exports = handler
